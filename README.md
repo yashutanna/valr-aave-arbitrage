@@ -4,6 +4,11 @@
 
 This project is a TypeScript-based application integrating with AAVE and VALR to track the Arbitrage between VALR lending rates and AAVE borrow rates
 
+## Quickstart
+```bash
+   docker run yashutanna/valr-aave-arbitrage:latest -e VALR_API_KEY=<key> -e VALR_API_SECRET=<secret> -p 3000:3000
+```
+
 ## Prerequisites
 
 - **Node.js**: >= 20.x.x
