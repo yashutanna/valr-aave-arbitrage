@@ -6,7 +6,7 @@ This project is a TypeScript-based application integrating with AAVE and VALR to
 
 ## Quickstart
 ```bash
-   docker run yashutanna/valr-aave-arbitrage:latest -e VALR_API_KEY=<key> -e VALR_API_SECRET=<secret> -p 3000:3000
+   docker run -it -e VALR_API_KEY=<key> -e VALR_API_SECRET=<secret> -p 3000:3000 yashutanna/valr-aave-arbitrage:latest
 ```
 
 ## Prerequisites
