@@ -1,0 +1,28 @@
+{
+  "info": {
+    "_postman_id": "e5d26bc0-112a-4255-a2ec-2358d8740c64",
+    "name": "AAVE Arb",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "2487904"
+  },
+  "item": [
+    {
+      "name": "Metrics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/metrics/",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "metrics",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
