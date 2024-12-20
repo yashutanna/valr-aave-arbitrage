@@ -8,6 +8,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/setup-node@v4.1.0
+      with:
+        node-version: 20.9.0
+        cache-dependency-path: package-lock.json
+        cache: true
+    - name: Install dependencies
+      run: npm install
+    - name: Compile project
+      run: npm run build
+  build-docker:
+    runs-on: ubuntu-latest
+    steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag valr-aave-arbitrage:$(date +%s)
