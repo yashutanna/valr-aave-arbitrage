@@ -32,6 +32,9 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: typescript-build
+        path: dist
+    - name: Display working directory
+      run: pwd
     - name: Display structure of downloaded files
       run: ls -R
     - name: Build the Docker image
