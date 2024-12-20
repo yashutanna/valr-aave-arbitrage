@@ -12,13 +12,14 @@ jobs:
       with:
         node-version: 20.9.0
         cache-dependency-path: package-lock.json
-        cache: true
+        cache: npm
     - name: Install dependencies
       run: npm install
     - name: Compile project
       run: npm run build
   build-docker:
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
